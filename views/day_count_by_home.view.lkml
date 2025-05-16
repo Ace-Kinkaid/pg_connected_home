@@ -8,6 +8,7 @@ view: day_count_by_home {
       connected_home.home_id  AS day_home_id,
       COUNT(DISTINCT ( connected_home.local_date  ) ) AS count_of_days_by_home
     FROM `looker-core-4cjg.pg_demo_data.connected_home`  AS connected_home
+    WHERE {% condition connected_home.local_date %} connected_home.local_date {% endcondition %}
     GROUP BY
       1 ;;
     }
