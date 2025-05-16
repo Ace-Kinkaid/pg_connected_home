@@ -1,5 +1,5 @@
 view: connected_home {
-  sql_table_name: `looker-core-4cjg.pg_demo_data.connected_home` ;;
+  sql_table_name: `[your_project].[your_dataset].[your_table]` ;;
   drill_fields: [id]
 
   dimension: id {

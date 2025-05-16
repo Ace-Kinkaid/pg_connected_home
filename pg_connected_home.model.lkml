@@ -1,4 +1,4 @@
-connection: "pg_connected_home"
+connection: "[your_connection_name]"
 
 include: "/views/*.view.lkml"                # include all views in the views/ folder in this project
 # include: "/**/*.view.lkml"                 # include all views in this project
